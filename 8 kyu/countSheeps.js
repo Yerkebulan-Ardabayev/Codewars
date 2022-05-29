@@ -1,4 +1,4 @@
-function countSheeps(arrayOfSheep) {
+function countSheep(arrayOfSheep) {
   return arrayOfSheep.filter(sheep => sheep).length;
   
 }

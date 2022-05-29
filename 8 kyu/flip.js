@@ -19,7 +19,27 @@
 //   'L', [1, 4, 5, 3, 5] -> [5, 5, 4, 3, 1]
 
 const flip = (d, a) => {
-  let newFlip = [...a];
-  
-  return
+  let newArr = [];
+  let arr = a.slice();
+  let first = 0;
+  let last = arr.length - 1;
+  let temp;
+  if (d === 'L') {
+    while (first < last) {
+      temp = arr[first];
+      arr[first] = arr[last];
+      arr[last] = temp;
+      first++;
+      last--;
+    }
+  } else if (d === 'R') {
+    while (first < last) {
+      temp = arr[first];
+      arr[first] = arr[last];
+      arr[last] = temp;
+      first++;
+      last--;
+    }
+  }
+  return arr;
 }
