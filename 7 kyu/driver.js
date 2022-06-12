@@ -28,12 +28,7 @@
 // Вам нужно будет вывести полный 16 - значный номер водительского удостоверения.
 
 function driver(data) {
-  let year = data[3].slice(6, 10);
-  let month = data[3].slice(3, 5);
-  let day = data[3].slice(0, 2);
-  let surname = data[2].slice(0, 5);
-  let name = data[0].slice(0, 1);
-  let patronymic = data[1].slice(0, 1);
+  
   
 }
 
