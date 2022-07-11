@@ -37,6 +37,16 @@
 // Обратите внимание, что 121 имеет удвоенную цифру 1.
 
 function nbDig(n, d) {
-  // your code
+  let count = 0;
+  for (let i = 0; i <= n; i++) {
+    let square = i * i;
+    let squareString = square.toString();
+    for (let j = 0; j < squareString.length; j++) {
+      if (squareString[j] === d.toString()) {
+        count++;
+      }
+    }
+  }
+  return count;
 }
 
