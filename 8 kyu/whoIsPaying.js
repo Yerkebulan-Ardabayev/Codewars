@@ -9,5 +9,7 @@
 // Ваш код покажет полное имя соседа и усеченную версию имени в виде массива.Если количество символов в имени меньше или равно двум, будет возвращен массив, содержащий только имя как есть.
 
 function whoIsPaying(name) {
-  //your code here
+  return name.length > 2 ? [name, name.slice(0, 2)] : [name];
 }
+
+const whoIsPaying = name => [...new Set([name, name.slice(0, 2)])];
